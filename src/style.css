@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  /* To-Do List Container */
+  .list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  /* List Items */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #c9bfbf;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    /* flex-flow: column; */
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+  }
+
+  li:nth-child(odd) {
+    background: #b0c9fb;
+  }
+  
+  li:hover {
+    background-color: #f0003c;
+    color:#eee;
+  }
+  
+  li input[type="checkbox"] {
+    margin-right: 15px;
+  }
+  
+  li span {
+    flex-grow: 1;
+    text-align: left;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  li p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-right: 15px;
+  }
+
+  
+  
+  /* Checkbox */
+  input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
