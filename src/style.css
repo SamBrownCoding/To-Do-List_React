@@ -31,6 +31,7 @@ body {
     padding: 0;
   }
   
+  
   li {
     background-color: #c9bfbf;
     margin: 10px 0;
@@ -44,14 +45,17 @@ body {
     transition: background-color 0.3s ease;
   }
 
+
   li:nth-child(odd) {
     background: #b0c9fb;
   }
   
   li:hover {
-    background-color: #f0003c;
+    background-color: rgb(240, 0, 60, 0.8);
     color:#eee;
   }
+
+
   
   li input[type="checkbox"] {
     margin-right: 15px;
@@ -75,7 +79,7 @@ body {
   
   /* Checkbox */
   input[type="checkbox"] {
-    transform: scale(1.2);
+    transform: scale(1.5);
     cursor: pointer;
+    accent-color: #f0003c;
   }
-  
