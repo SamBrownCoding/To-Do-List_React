@@ -79,7 +79,7 @@ body {
   
   /* Checkbox */
   input[type="checkbox"] {
-    transform: scale(1.5);
+    transform: scale(1.6);
     cursor: pointer;
     accent-color: #f0003c;
   }
