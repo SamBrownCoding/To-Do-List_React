@@ -20,7 +20,8 @@ function ToDoList() {
     };
 
     const delTask = (taskIndex) => {
-        const newTasks = tasks.filter((_, i) => i !== taskIndex);
+        const newTasks = tasks.filter((_,i) => i !== taskIndex);
+        // console.log(newTasks);
         setTasks(newTasks);
     };
 
@@ -31,8 +32,8 @@ function ToDoList() {
                 <ul>
                     {tasks.map((task, taskIndex) => (
                         // Render each task as a index item
-                        <li key={taskIndex} style={{ textDecoration: task.done ? 'line-through' : 'none' }}>
-
+                        <li key={taskIndex}>
+                            <div className="d-flex align-items-center col-3" style={{ textDecoration: task.done ? 'line-through' : 'none' }}>
                             {/* Checkbox to toggle the 'done' status */}
                             <input type="checkbox" checked={task.done} onChange={() => handleToggleDone(taskIndex)} />
 
@@ -40,13 +41,14 @@ function ToDoList() {
                             <span>{task.name}</span>
                             
                             {/* Task description */}
-                            <p className="col-6">{task.description}</p>
+                            <p>{task.description}</p>
 
                             {/* Task due time */}
                             <p>Due: {task.timeDue}</p>
+                            </div>
 
                             {/* Task Delete Button */}
-                            <button className="deleteBtn" onClick={() => delTask(taskIndex)} >Delete</button>
+                            <button className="deleteBtn" style={{ textDecoration: 'none' }} onClick={() => delTask(taskIndex)} >Delete</button>
                         </li>
                     ))}
                 </ul>
